@@ -108,11 +108,14 @@ class _HomeState extends State<Home> {
                               child: Row(
                                 children: <Widget>[
                                   Expanded(
+                                    flex:1,
                                     child: Image(
                                         image: AssetImage(
                                             "assets/images/phone.png")),
                                   ),
-                                  Expanded(child: Text("Smartphones"))
+                                  Expanded(
+                                    flex:2,
+                                    child: Text("Smartphones",style:TextStyle(color:Colors.white)))
                                 ],
                               ),
                             ),
@@ -240,13 +243,23 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         TextButton(
                           onPressed: () {},
                           child: Container(
-                            width: 100,
+                            width: 85
+                            ,
                             height: 120,
+                            child:Column(
+                              mainAxisAlignment:MainAxisAlignment.end,
+                              children:[
+                                Text("ORDERS",style:TextStyle(color:Colors.black)),
+                                SizedBox(
+                                  height:5
+                                ),
+                              ]
+                            ),
                             decoration: BoxDecoration(
                               borderRadius:
                                   BorderRadiusDirectional.circular(15),
@@ -257,8 +270,18 @@ class _HomeState extends State<Home> {
                         TextButton(
                           onPressed: () {},
                           child: Container(
-                            width: 100,
+                            width: 85,
                             height: 120,
+                            child:Column(
+                              mainAxisAlignment:MainAxisAlignment.end,
+                              children:[
+                                
+                                Text("TRACK",style:TextStyle(color:Colors.black)),
+                                SizedBox(
+                                  height:5
+                                ),
+                              ]
+                            ),
                             decoration: BoxDecoration(
                               borderRadius:
                                   BorderRadiusDirectional.circular(15),
@@ -269,8 +292,17 @@ class _HomeState extends State<Home> {
                         TextButton(
                           onPressed: () {},
                           child: Container(
-                            width: 100,
+                            width: 85,
                             height: 120,
+                            child:Column(
+                              mainAxisAlignment:MainAxisAlignment.end,
+                              children:[
+                                Text("ACCOUNT",style:TextStyle(color:Colors.black)),
+                                SizedBox(
+                                  height:5
+                                ),
+                              ]
+                            ),
                             decoration: BoxDecoration(
                               borderRadius:
                                   BorderRadiusDirectional.circular(15),
