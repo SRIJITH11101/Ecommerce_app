@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "name": "Apple iPhone 14 Pro Max",
+      "description": "Description of Item 1",
+      "brand": "Apple",
+      "price": "10.99",
+      "category": "Smartphones"
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S23 Ultra",
+      "description": "Description of Item 2",
+      "brand": "Samsung ",
+      "price": "20.49",
+      "category": "Smartphones"
+    },
+    {
+      "id": 3,
+      "name": "Google Pixel 7 Pro",
+      "description": "Description of Item 3",
+      "brand": "Google",
+      "price": "15.79",
+      "category": "Smartphones"
+    },
+    {
+      "id": 4,
+      "name": "OnePlus 11 Pro",
+      "description": "Description of Item 4",
+      "brand": "OnePlus",
+      "price": "8.99",
+      "category": "Smartphones"
+    },
+    {
+      "id": 5,
+      "name": "Xiaomi 13 Pro",
+      "description": "Description of Item 5",
+      "brand": "Xiaomi",
+      "price": "25.99",
+      "category": "Smartphones"
+    },
+    {
+      "id": 6,
+      "name": "Apple MacBook Air M2",
+      "description": "Description of Item 6",
+      "brand": "Apple",
+      "price": "18.49",
+      "category": "Laptops"
+    },
+    {
+      "id": 7,
+      "name": "Dell XPS 13",
+      "description": "Description of Item 7",
+      "brand": "Dell",
+      "price": "12.99",
+      "category": "Laptops"
+    },
+    {
+      "id": 8,
+      "name": "Microsoft Surface Laptop Studio",
+      "description": "Description of Item 8",
+      "brand": "Microsoft",
+      "price": "19.99",
+      "category": "Laptops"
+    },
+    {
+      "id": 9,
+      "name": "ASUS Zenbook 14 OLED",
+      "description": "Description of Item 9",
+      "brand": "ASUS",
+      "price": "14.49",
+      "category": "Laptops"
+    },
+    {
+      "id": 10,
+      "name": "Lenovo ThinkPad X1 Carbon",
+      "description": "Description of Item 10",
+      "brand": "Lenovo",
+      "price": "11.99",
+      "category": "Laptops"
+    },
+    {
+      "id": 11,
+      "name": "Apple Watch Series 8",
+      "description": "Description of Item 11",
+      "brand": "Apple",
+      "price": "22.49",
+      "category": "Smartwatches"
+    },
+    {
+      "id": 12,
+      "name": "Samsung Galaxy Watch 5 Pro",
+      "description": "Description of Item 12",
+      "brand": "Samsung",
+      "price": "16.79",
+      "category": "Smartwatches"
+    },
+    {
+      "id": 13,
+      "name": "Google Pixel Watch",
+      "description": "Description of Item 13",
+      "brand": "Google",
+      "price": "9.99",
+      "category": "Smartwatches"
+    },
+    {
+      "id": 14,
+      "name": "Fitbit Sense 2",
+      "description": "Description of Item 14",
+      "brand": "Fitbit",
+      "price": "21.99",
+      "category": "Smartwatches"
+    },
+    {
+      "id": 15,
+      "name": "Garmin Forerunner 265",
+      "description": "Description of Item 15",
+      "brand": "Garmin",
+      "price": "17.49",
+      "category": "Smartwatches"
+    }
+  ]
+  
