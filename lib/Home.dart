@@ -84,44 +84,28 @@ class _HomeState extends State<Home> {
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children: <Widget>[
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => Itemsearch(
-                                    showFloatingButton: true,
-                                    cat: 1,
-                                  ),
-                                ),
-                              );
-                            },
-                            style: ButtonStyle(
-                                elevation: MaterialStateProperty.all(0)),
-                            child: Container(
-                              height: 70,
-                              width: 150,
-                              decoration: BoxDecoration(
-                                  color: Color(0xFFF9772F),
-                                  borderRadius:
-                                      BorderRadiusDirectional.circular(17)),
-                              child: Row(
-                                children: <Widget>[
-                                  Expanded(
-                                    flex:1,
-                                    child: Image(
-                                        image: AssetImage(
-                                            "assets/images/phone.png")),
-                                  ),
-                                  Expanded(
-                                    flex:2,
-                                    child: Text("Smartphones",style:TextStyle(color:Colors.white)))
-                                ],
-                              ),
-                            ),
+                          GestureDetector(
+                          child: Image(
+                            image: AssetImage("assets/smartphones.png"),
                           ),
-                          TextButton(
-                            onPressed: () {
+                          onTap: () {
+                                                      Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(
+                                                          builder: (context) => Itemsearch(
+                                                            showFloatingButton: true,
+                                                            cat: 1,
+                                                          ),
+                                                        ),
+                                                      );
+                                                    },
+                        ),
+                        SizedBox(width:10),
+                        GestureDetector(
+                          child: Image(
+                            image: AssetImage("assets/laptops.png"),
+                          ),
+                          onTap: () {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -132,23 +116,14 @@ class _HomeState extends State<Home> {
                                 ),
                               );
                             },
-                            child: Container(
-                              height: 70,
-                              width: 150,
-                              decoration: BoxDecoration(
-                                  color: Color(0xFFB6FF7C),
-                                  borderRadius:
-                                      BorderRadiusDirectional.circular(17)),
-                              child: Row(
-                                children: <Widget>[
-                                  //Image(image: AssetImage("")),
-                                  Text("Laptops")
-                                ],
-                              ),
-                            ),
+                        ),
+                        SizedBox(width:10),
+
+                        GestureDetector(
+                          child: Image(
+                            image: AssetImage("assets/smartwatches.png"),
                           ),
-                          TextButton(
-                            onPressed: () {
+                          onTap: () {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -159,21 +134,11 @@ class _HomeState extends State<Home> {
                                 ),
                               );
                             },
-                            child: Container(
-                              height: 70,
-                              width: 150,
-                              decoration: BoxDecoration(
-                                  color: Color(0xFFF95689),
-                                  borderRadius:
-                                      BorderRadiusDirectional.circular(17)),
-                              child: Row(
-                                children: <Widget>[
-                                  // Image(image: AssetImage("")),
-                                  Text("Smartwatches")
-                                ],
-                              ),
-                            ),
-                          ),
+                        ),
+
+                         
+                          
+                          
                           // TextButton(
                           //   onPressed: () {},
                           //   child: Container(
