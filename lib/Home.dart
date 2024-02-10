@@ -210,71 +210,35 @@ class _HomeState extends State<Home> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        TextButton(
-                          onPressed: () {},
-                          child: Container(
-                            width: 85
-                            ,
-                            height: 120,
-                            child:Column(
-                              mainAxisAlignment:MainAxisAlignment.end,
-                              children:[
-                                Text("ORDERS",style:TextStyle(color:Colors.black)),
-                                SizedBox(
-                                  height:5
-                                ),
-                              ]
-                            ),
-                            decoration: BoxDecoration(
-                              borderRadius:
-                                  BorderRadiusDirectional.circular(15),
-                              color: Colors.greenAccent,
-                            ),
+                        GestureDetector(
+                          child: Image(
+                            image: AssetImage("assets/orders.png"),
                           ),
+                          onTap: () {
+                             
+                            },
                         ),
-                        TextButton(
-                          onPressed: () {},
-                          child: Container(
-                            width: 85,
-                            height: 120,
-                            child:Column(
-                              mainAxisAlignment:MainAxisAlignment.end,
-                              children:[
-                                
-                                Text("TRACK",style:TextStyle(color:Colors.black)),
-                                SizedBox(
-                                  height:5
-                                ),
-                              ]
-                            ),
-                            decoration: BoxDecoration(
-                              borderRadius:
-                                  BorderRadiusDirectional.circular(15),
-                              color: Colors.greenAccent,
-                            ),
+                        SizedBox(width:20),
+                        GestureDetector(
+                          child: Image(
+                            image: AssetImage("assets/cart.png"),
                           ),
+                          onTap: () {
+                              
+                            },
                         ),
-                        TextButton(
-                          onPressed: () {},
-                          child: Container(
-                            width: 85,
-                            height: 120,
-                            child:Column(
-                              mainAxisAlignment:MainAxisAlignment.end,
-                              children:[
-                                Text("ACCOUNT",style:TextStyle(color:Colors.black)),
-                                SizedBox(
-                                  height:5
-                                ),
-                              ]
-                            ),
-                            decoration: BoxDecoration(
-                              borderRadius:
-                                  BorderRadiusDirectional.circular(15),
-                              color: Colors.greenAccent,
-                            ),
+                        SizedBox(width:20),
+                        GestureDetector(
+                          child: Image(
+                            
+                            image: AssetImage("assets/account.png",),
                           ),
+                          onTap: () {
+                              
+                            },
                         ),
+
+                       
                       ],
                     )
                   ],
