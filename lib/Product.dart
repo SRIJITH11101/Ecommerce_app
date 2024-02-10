@@ -27,7 +27,7 @@ class _ProductpageState extends State<Productpage> {
       context: context,
       builder: (BuildContext context) {
         return Container(
-          height: 100,
+          height: 50,
           color: Colors.green,
           child: Center(
             child: Text(
