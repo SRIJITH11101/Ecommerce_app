@@ -8,6 +8,7 @@ import 'package:ondc/Search/Item.dart';
 import 'package:ondc/Search/Item_api.dart';
 import 'package:ondc/Search/SearchWidget.dart';
 import 'package:speech_to_text/speech_to_text.dart';
+import 'package:ondc/Product.dart';
 
 class Itemsearch extends StatefulWidget {
   final bool showFloatingButton;
@@ -159,10 +160,32 @@ class _ItemsearchState extends State<Itemsearch> {
         break;
     }
 
-    return ListTile(
+    return ElevatedButton (
+      onPressed:(){
+        print("hello");
+        //print(name secription brand price and category
+        //)
+        print(item.category);
+         Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Productpage(
+                              name:item.name,
+                              desc:item.description,
+                              brand:item.brand,
+                              price:item.price,
+                              category:item.category,
+                              
+                            ),
+                          ),
+                        );
+      },
+      child:ListTile(
+      
       leading: Icon(iconData, size: 40),
       title: Text(item.name),
       subtitle: Text(item.brand),
+    ),
     );
   }
 }
