@@ -31,8 +31,11 @@ class _ProductpageState extends State<Productpage> {
       
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
-        child: Column(
+        child: Padding(
+           padding:  EdgeInsets.only(left:10,right:10),
+          child:Column(
           mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment:CrossAxisAlignment.start,
           children: [
             if (category == "Smartphones")
               Icon(Icons.phone_android_sharp,size:300),
@@ -41,7 +44,7 @@ class _ProductpageState extends State<Productpage> {
             if(category == 'SmartWatches')
               Icon(Icons.watch_outlined,size:300),
             Text(name, style: TextStyle(fontSize: 42, fontWeight: FontWeight.bold)),
-            Text(price, style: TextStyle(fontWeight: FontWeight.w600, fontSize: 45)),
+            Text("\$ ${price}", style: TextStyle(fontWeight: FontWeight.w600, fontSize: 35,color:Colors.green)),
             SizedBox(height: 15),
             Text("Description", style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600)),
             SizedBox(height: 10),
@@ -55,6 +58,7 @@ class _ProductpageState extends State<Productpage> {
               child: Text("Buy"),
             ),
           ],
+        ),
         ),
       ),
     );
