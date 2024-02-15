@@ -63,6 +63,7 @@ class _HomeState extends State<Home> {
                   );
                 },
                 child: Container(
+                  
                   child: Padding(
                     padding: const EdgeInsets.fromLTRB(20, 15, 0, 0),
                     child: Text("Search..",
